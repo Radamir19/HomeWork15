@@ -45,11 +45,11 @@ package org.example;
 
             System.arraycopy(arr1, 0, arr, 0, HALF_SIZE);
             System.arraycopy(arr2, 0, arr, HALF_SIZE, HALF_SIZE);
-            System.out.println("Two threads ends with: " + (System.currentTimeMillis() - a));
+            System.out.println("Two threads ends with: "+(System.currentTimeMillis() - a));
         }
 
         public static void main(String s[]) {
-            Main o = new Main();
+            Main o=new Main();
             o.runOneThread();
             o.runTwoThreads();
         }
